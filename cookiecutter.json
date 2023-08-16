@@ -1,0 +1,6 @@
+{
+  "project_name": "Vagrant Templates",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+  "author": "Anonymous",
+  "os": ["ubuntu"]
+}
