@@ -21,7 +21,7 @@ selected_os = '{{cookiecutter.os}}'
 
 
 for item in os.listdir(selected_os):
-    shutil.move(item, '.')
+    shutil.move(os.path.join(selected_os, item), '.')
 
 for current_os in available_oses:
     remove(current_os)
