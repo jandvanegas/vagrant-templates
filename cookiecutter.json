@@ -1,6 +1,7 @@
 {
   "project_name": "Vagrant Templates",
-  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+  "__project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+  "__vagrant_hostname": "{{ cookiecutter.__project_slug.replace('_', '-') }}",
   "author": "Anonymous",
   "os": ["debian/bookworm64"]
 }

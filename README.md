@@ -16,7 +16,6 @@ pipx install cruft
 ```bash
 ❯ cruft create https://github.com/jandvanegas/vagrant-templates
 project_name [Vagrant Templates]: My project     
-project_slug [my_project]: 
 author [Anonymous]: Me
 Select os:
 1 - ubuntu
