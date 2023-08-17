@@ -16,8 +16,8 @@ def remove(filepath: str) -> None:
         shutil.rmtree(filepath)
 
 
-available_oses = ['ubuntu']
-selected_os = '{{cookiecutter.os}}'
+available_oses = ['ubuntu', 'debian']
+selected_os = '{{cookiecutter.os}}'.split('/')[0]
 
 
 for item in os.listdir(selected_os):
