@@ -1,5 +1,6 @@
 import os
 import shutil
+import subprocess
 
 
 def remove(filepath: str) -> None:
@@ -25,3 +26,9 @@ for item in os.listdir(selected_os):
 
 for current_os in available_oses:
     remove(current_os)
+
+
+subprocess.call(['git', 'init'])
+subprocess.call(['git', 'submodule', 'add', 'https://github.com/jandvanegas/dot-files.git'])
+subprocess.call(['git', 'add', '*'])
+subprocess.call(['git', 'commit', '-m', 'chore: Initial commit'])
