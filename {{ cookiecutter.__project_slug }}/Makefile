@@ -4,7 +4,7 @@ up:
 	ssh-keygen -f "$(HOME)/.ssh/known_hosts" -R "[127.0.0.1]:2222"
 
 	export ANSIBLE_CONFIG=$(ansible_config); \
-		ansible-playbook ./dot-files/playbooks/terminal-playbook.yml --connection local --ask-become-pass
+		ansible-playbook ./dot-files/playbooks/terminal-playbook.yml
 
 down:
 	vagrant destroy -f
