@@ -1,0 +1,2 @@
+- import_playbook: ../dot-files/playbooks/brew-playbook.yml
+- import_playbook: ../dot-files/playbooks/terminal-playbook.yml
